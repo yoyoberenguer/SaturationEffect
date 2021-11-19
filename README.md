@@ -51,8 +51,21 @@ That is, both a very light color and a very dark color can be heavily
 saturated in HSL; whereas in the previous definitions—as well as in the HSV
 color space—colors approaching white all feature low saturation.
 
+Excitation purity is the relative distance from the white point.
+Contours of constant purity can be found by shrinking the spectral locus about the white point.
+The points along the line segment have the same hue, with pe increasing from 0 to 1 between the 
+white point and position on the spectral locus (position of the color on the horseshoe shape in
+the diagram) or (as at the saturated end of the line shown in the diagram) position on the line
+of purples.
+
+![alt text](https://raw.githubusercontent.com/yoyoberenguer/SaturationEffect/main/SaturationEffect/Assets/423px-Excitation_Purity.svg.png)
+
+
+image ref : By I, User:adoniscik, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3477910
+
+
 ## Installation 
-check the link for a newest version https://pypi.org/project/SaturationEffect/
+check the link for a newest version https://test.pypi.org/project/SaturationEffect/
 ```
 pip install SaturationEffect 
 # or version 1.0.2  
@@ -65,10 +78,6 @@ pip install SaturationEffect==1.0.2
 >>>from SaturationEffect.saturation import __version__
 >>>__version__
 ```
-
-
-By I, User:adoniscik, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3477910
-![alt text](https://commons.wikimedia.org/w/index.php?curid=3477910)
 
 ## Saturation mask 
 The library contains 4 methods using an optional mask to determine the pixels 
@@ -127,9 +136,6 @@ cpdef saturation_buffer_mask_inplace(buffer_, shift_, mask_array, width_, height
 # Inplace method, the changes are applied to the surface directly
 cpdef inline object saturation24_inplace(array_, shift_)
 cpdef inline object saturation32_inplace(array_, shift_)
-
-  
-
 ```
 
 ## Quick example
