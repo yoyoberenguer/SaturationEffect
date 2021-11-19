@@ -1,5 +1,7 @@
 # Saturation Effect
 
+![alt text](https://raw.githubusercontent.com/yoyoberenguer/SaturationEffect/main/SaturationEffect/Assets/full_range_saturation.png)
+
 This library contains fast algorithms written in `Cython` and `python` to change 
 the saturation level of an image or textures.
 This code is using extensively the HSL (Hue, Saturation, Lightness) algorithm 
