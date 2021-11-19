@@ -19,7 +19,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="SaturationEffect",
-    version="1.0.7",
+    version="1.0.0",
     author="Yoann Berenguer",
     author_email="yoyoberenguer@hotmail.com",
     description="Saturation effect (shader effect)",
