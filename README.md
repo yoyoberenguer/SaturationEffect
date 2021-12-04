@@ -12,6 +12,10 @@ https://github.com/yoyoberenguer/HSV
 
 https://github.com/yoyoberenguer/HSL
 
+Real time processing
+
+![alt text](SaturationEffect/Assets/SaturationEffect1.gif)
+
 The methods can be used with a large variety of image format such as png, jpg, 
 bmp etc, check pygame image format compatibility for more details. 
 The image format can be either 24-32 bit with or without the transparency channel 
